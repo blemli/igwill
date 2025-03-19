@@ -20,3 +20,4 @@
 - [ ] Mit einem einzigen  Ladegerät alle Geräte laden
 - [ ] Menschen die diesen Beruf lieben
 - [ ] Eine komplett offene, echte Alternative zu Google Maps
+- [ ] Dass die kleinen Firmen nicht sterben
