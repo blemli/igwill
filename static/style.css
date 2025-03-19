@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #f9f9f9;
+    color: #444;
+    font-family: "JetBrains Mono", monospace;
+    text-align: center
+}
+
+body {
+    display: flex;
+    flex-direction: column
+}
+
+header, main {
+    padding: 15px
+}
+
+main {
+    flex: 1
+}
+
+footer {
+    padding: 10px;
+    background: #f3f3f3;
+    border-top: 1px solid #ccc;
+    text-align: center
+}
+
+h1 {
+    color: #8C1AC4;
+    font: bold 3rem "JetBrains Mono", monospace;
+}
+
+.dropzone {
+    border: 3px dashed #8C1AC4;
+    padding: 30px;
+    margin: 20px
+}
+
+.flash {
+    background: #8C1AC4;
+    color: #fff;
+    padding: 10px;
+    margin: 20px
+}
+
+input, button {
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 2px solid #8C1AC4;
+    margin: 5px
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse
+}
+
+th, td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    text-align: left;
+    border: 1px solid #8C1AC4;
+    padding: 8px
+}
+
+form {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: left
+}
+
