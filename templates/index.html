@@ -18,6 +18,7 @@
 		<input type="checkbox" 
 		{% if wish[1] %}
 			 checked
+			 onclick="this.checked=!this.checked;"
 		{% else %}
 			onclick="this.checked=!this.checked; window.location.href='mailto:stephan@problem.li?subject={{ wish[0]  }}🤗&body=Lieber Stephan :)%0DIch kenne da was:';"
 		{% endif %} >
