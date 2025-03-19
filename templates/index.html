@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="icon" type="icon/svg" href="{{ url_for('static', filename='favicon.svg') }}">
+	<title>igwill</title>
+</head>
+<body>
+	<div>
+    <h1>igwill</h1>
+	<img src="{{ url_for('static', filename='favicon.svg') }}" height="7%"/>
+    <h2>Was ich mir wünsche:</h2>
+	<i>(als Informatiker)</i>
+	{% for wish in wishes %}
+	<article>
+		<input type="checkbox" 
+		{% if wish[1] %}
+			 checked
+		{% else %}
+			onclick="this.checked=!this.checked; window.location.href='mailto:stephan@problem.li?subject={{ wish[0]  }}🤗&body=Lieber Stephan :)%0DIch kenne da was:';"
+		{% endif %} >
+		{% if wish[1] is not none and wish[2] is not none %}
+		<s>
+		{% endif %}
+		{{ wish[0] }}
+		{% if wish[1] is not none %}
+		</s>&nbsp;→ <a href="{{ wish[2] }}">{{ wish[1] }}</a>
+		{% endif %}
+		<br/>
+	</article>
+	{% endfor %}
+</div>
+</body>
+</html>
