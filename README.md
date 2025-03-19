@@ -1,4 +1,4 @@
-# iwill
+# igwill
 
 ![](./static/favicon.svg)
 
