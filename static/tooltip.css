@@ -1,0 +1,89 @@
+:root {
+    --tooltip-color: darkgoldenrod;
+}
+.has-tip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.has-tip .tip-bottom,
+.has-tip .tip-top,
+.has-tip .tip-right,
+.has-tip .tip-left {
+    visibility: hidden;
+    background: var(--tooltip-color);
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+}
+.has-tip:hover .tip-bottom,
+.has-tip:hover .tip-top,
+.has-tip:hover .tip-right,
+.has-tip:hover .tip-left {
+    visibility: visible;
+}
+.tip-bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+.tip-top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+.tip-right {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+.tip-left {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+.tip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--tooltip-color) transparent;
+}
+.tip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--tooltip-color) transparent transparent transparent;
+}
+.tip-right::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--tooltip-color) transparent transparent;
+}
+.tip-left::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--tooltip-color);
+}

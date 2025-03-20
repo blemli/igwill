@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='tooltip.css') }}">
 	<link rel="icon" type="icon/svg" href="{{ url_for('static', filename='favicon.svg') }}">
 	<title>igwill</title>
 </head>
@@ -11,7 +12,7 @@
 	<div>
     <h1>igwill</h1>
 	<img src="{{ url_for('static', filename='favicon.svg') }}" height="7%"/>
-    <h2>Was ich mir wünsche:</h2>
+    <h2>Was <span class="has-tip">ich<span class="tip-top">Stephan</span></span> mir wünsche:</h2>
 	<i>(als Informatiker)</i>
 	{% for wish in wishes %}
 	<article>
