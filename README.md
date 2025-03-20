@@ -14,7 +14,7 @@
 - [ ] Ein Smartphone dass man nur alle zwei Wochen laden muss
 - [ ] Ein Smartphone das einem nicht ablenkt
 - [ ] Eine dezentrale Cloud
-- [ ] Ein Laptop mit reparierbarer Hardware
+- [x] Ein Laptop mit reparierbarer Hardware --> [framework](https://frame.work)
 - [ ] Ein minimalistisches Betriebssystem ohne Bloatware
 - [ ] Eine Suchmaschine die die schönen Dinge findet
 - [ ] Mit einem einzigen  Ladegerät alle Geräte laden
