@@ -1,3 +1,22 @@
+/* 
+
+a small helper to show a tooltip without js
+
+usage: 
+<p>
+    Show a 
+    <span class="has-tip">
+        tooltip
+        <span class="tip-top">
+            this is the tooltip
+        </span>
+    </span>
+    easily
+</p>
+
+TODO: ease in
+
+*/
 :root {
     --tooltip-color: darkgoldenrod;
 }
