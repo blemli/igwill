@@ -22,3 +22,4 @@
 - [ ] Eine komplett offene, echte Alternative zu Google Maps
 - [ ] Dass die kleinen Firmen nicht sterben
 - [ ] Ein Messenger mit dem ich über alle Kanäle (Whatsapp, SMS, Mail, Matrix) kommunizieren kann
+- [ ] Ein Cross-Platform App um webapps als native apps zu tarnen 
